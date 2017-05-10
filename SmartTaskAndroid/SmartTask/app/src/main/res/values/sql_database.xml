@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CREATE-->
+    <string name="sql_create_table_users">
+        create table users (id integer primary key autoincrement,
+                            iduser integer,
+                            login text,
+                            password text,
+                            name text,
+                            surname text,
+                            usercode text,
+                            addtime text)
+    </string>
+
+     <string name="sql_create_table_tasks">
+        create table tasks (id integer primary key autoincrement,
+                            idtask integer,
+                            name text,
+                            description text,
+                            addtime text,
+                            begintime text,
+                            endtime text,
+                            priority integer,
+                            status integer)
+    </string>
+
+    <string name="sql_create_table_users_tasks">
+        create table users_tasks (id integer primary key autoincrement,
+                                  iduser integer,
+                                  idtask integer)
+    </string>
+
+</resources>
